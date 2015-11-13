@@ -1,0 +1,151 @@
+body {
+    margin: auto;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 270px;
+    background-color: #FF4081;
+    position: absolute;
+}
+
+figure {
+        z-index: 99999;
+    position: fixed;
+    margin-top: 14px;
+    font-size: 9pt;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+}
+
+nav {
+        z-index: 99999;
+    font-family: Montserrat, sans-serif;
+    width: 100%;
+    height: 100px;
+    background-color: #FF4081;
+    position: fixed;
+    color: #fff;
+    text-align: right;
+    transition: 0.5s;
+}
+
+ul {
+    margin-right: 20px;
+    display: inline;
+    position: relative;
+}
+
+ul li {
+    display: inline;
+    padding: 20px;
+}
+
+li b {
+    font-family: FontAwesome;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    position: absolute;
+    width: 100%;
+}
+
+.logo {
+    background-color: #FF4081;
+    height: 270px;
+    width: 1500px;
+    margin-left: -300px;
+}
+
+#drag {
+    cursor: pointer;
+}
+
+.fs {
+    width: 100%;
+    height: 720px;
+    margin-top: 270px;
+}
+
+.info {
+    color: #666;
+    background-color: #fff;
+    margin: 0% 20%;
+    text-align: center;
+    width: 60%;
+    font-family: Montserrat, sans-serif;
+    font-size: 18pt;
+    -webkit-user-select: none; /* Chrome/Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */
+
+/* Rules below not implemented in browsers yet */
+-o-user-select: none;
+user-select: none;
+    cursor: default;
+}
+
+.info h1 {
+    font-family: Montserrat, sans-serif;
+    color: #666;
+}
+
+#ps {
+    border-bottom: 5px solid #FF4081;
+    width: 70%;
+    font-size: 10pt;
+}
+
+#ai {
+    border-bottom: 5px solid #1DE9B6;
+    width: 80%;
+    font-size: 10pt;
+}
+
+#ind {
+    border-bottom: 5px solid #7C4DFF;
+    width: 60%;
+    font-size: 10pt;
+}
+
+.pie {
+    background-color: #f0f0f0;
+    color: #fff;
+    height: 100px;
+    width: 102%;
+    font-family: sans-serif;
+    font-size: 10pt;
+    position: absolute;
+    bottom: 0;
+    margin-left: -1%;
+}
+
+.circulos {
+    margin-left: 8%;
+    float: left;
+    padding: 20px;
+}
+
+.circle {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    overflow: hidden;
+    -webkit-align-content: center;
+    align-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: #ECEFF1;
+    margin-right: 10%;
+}
+
+.contain-c {
+    margin-left: 8%;
+    text-align: center;
+}
