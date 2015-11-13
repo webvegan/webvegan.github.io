@@ -1,0 +1,224 @@
+html, body{
+  height:100%;
+}
+
+body {
+    margin: 0 auto;
+}
+
+header {
+    z-index: 99999;
+    width: 100%;
+    height: 100px;
+    background-color: #1DE9B6;
+    position: absolute;
+}
+
+figure {
+    position: fixed;
+    margin-top: 10px;
+    font-size: 12pt;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+}
+
+nav {
+    font-family: Montserrat, sans-serif;
+    width: 100%;
+    height: 100px;
+    background-color: #1DE9B6;
+    position: fixed;
+    color: #fff;
+    text-align: right;
+}
+
+ul {
+    margin-right: 20px;
+    display: inline;
+    position: relative;
+}
+
+ul li {
+    display: inline;
+    padding: 20px;
+}
+
+li b {
+    font-family: FontAwesome;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    width: 100%;
+    position: absolute;
+}
+
+.block {
+  height: 100%;
+  text-align: center;
+  padding-top: 8%;
+}
+
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+  height: 100%;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.circulos {
+    margin-left: 8%;
+    float: left;
+    padding: 20px;
+}
+
+.circle {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    overflow: hidden;
+    -webkit-align-content: center;
+    align-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: #ECEFF1;
+    margin-right: 10%;
+}
+
+.contain-c {
+    margin-left: 8%;
+    text-align: center;
+}
+
+#contact-area {
+	width: 60%;
+    height: 350px;
+	margin-top: 25px;
+    background: #ECEFF1;
+    border-radius: 5px;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 80%! important;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.4em;
+	margin: 0px 0px 10px 0px;
+	border-bottom: 1px solid #ccc;
+    border-radius: 0px;
+    background: #ECEFF1;
+    font-family: Montserrat, sans-serif;
+}
+
+#contact-area textarea {
+	height: 90px;
+    max-height: 180px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border-bottom: 1px solid #E91E63;
+    outline: 0;
+    transition: 0.3s;
+}
+
+#contact-area input.submit-button {
+    font-family: 'FontAwesome';
+	width: 70px! important;
+    height: 70px;
+	float: right;
+    border-radius: 50px;
+    margin-right: 50px;
+    background: #E91E63;
+    border-bottom: 0px;
+    color: #FFF;
+}
+
+#contact-area input.submit-button:hover {
+    cursor: pointer;
+    background-color: #E91E63;
+    transform: rotate(360deg);
+}
+
+label {
+    text-align: right;
+	float: left;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;
+}
+
+.i-tres {
+    width: 100%;
+    height: 620px;
+    background: #ECEFF1;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.i-tres:hover {
+    height: 720px;
+    transition: 0.8s;
+}
+
+.port-img {
+    background-image: url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/black-and-white-wallpaper-5.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.port-img2 {
+    background: #CFD8DC;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay{
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+    padding-top: 100px;
+}
+
+.overlay:hover {
+    background-image: url();
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.overlay a {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFF;
+    transition: 0.3s;
+}
+
+.overlay a:hover {
+    font-family: 'Montserrat', sans-serif;
+    color: #E91E63;
+    transition: 0.3s;
+}
+
+.overlay p {
+    width: 30%;
+    margin-top: -1%;
+}
