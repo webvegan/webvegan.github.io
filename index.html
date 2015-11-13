@@ -1,0 +1,103 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script type="text/javascript" src="dom-drag.js"></script>
+    </head>
+    <body>
+<header>
+<nav><br><br>
+<ul>
+    <li><a href="index.html"><i class="fa fa-circle" title="Inicio"></i></a></li>
+    <li><a href="portafolio.html"><b title="Portafolio"></b></a></li>
+    <li><a href="contacto.html"><b title="Contacto"></b></a></li>
+</ul>    
+</nav>
+<figure><a href="index.html"><h1>Nicolle Bustos</h1></a></figure>     
+
+    <img id="drag" src="img/logo.svg" height="100px" style="position: relative" />
+</header>
+        <main>
+        <div class="fs">
+        <iframe class="bryan" width="100%" height="720" src="https://www.youtube.com/embed/W3aT7NW8-Ok?rel=0&amp;autoplay=1;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+            
+        <div class="info" align="center">
+
+<script type="text/javascript">
+Drag.init(document.getElementById("drag"));
+</script><br><br>
+            <p><h1>Hola</h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare eros et ligula interdum vulputate. Fusce aliquet dictum ipsum, sed varius massa pellentesque vitae. Vestibulum justo ligula, elementum consequat porta eu, accumsan scelerisque nisl. Fusce rhoncus porttitor venenatis. Ut mattis elit neque, et ullamcorper nulla dapibus eget. Vestibulum vitae libero aliquet, sollicitudin velit ut, posuere purus. Sed ac tempus nisi, in accumsan est. Sed pharetra quam cursus, semper felis id.<br><br>
+        </p>
+        </div><br>
+<!--        <div class="contain-c">
+                    <div class="circulos">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circulos">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circulos">
+                        <div class="circle"></div>
+                    </div>
+                    </div>-->
+        <!--<div class="pie">
+        <div align="center">
+        <br>
+            Nicolle Bustos<br>
+            3006609683<br>
+            nicolle.org@gmail.com<br>
+            Barranquilla, Colombia
+        </div>
+        </div>-->
+        </main>
+        </body>
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/prefixfree.min.js"></script>
+        <script src="js/main.js"></script>
+<script type='text/javascript'>
+        
+        $(document).ready(function() {
+        
+            var jumboHeight = $('.bg').outerHeight();
+            function parallax(){
+            var scrolled = $(window).scrollTop();
+            $('.info').css('height', (jumboHeight-scrolled) + 'px');
+            }
+
+            $(window).scroll(function(e){
+            parallax();
+            });
+        
+        });
+        
+      </script>
+    
+</html>
+
+
+
+
+
+
+
