@@ -1,97 +1,445 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+@media screen and (min-width: 480px) {
 
-        <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/arteiraca.css">
-        <link rel="stylesheet" media="@media screen and (max-width: 480px)" href="mobile/css/arteiraca.css">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+html, body{
+  height:100%;
+}
 
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script type="text/javascript" src="dom-drag.js"></script>
-    </head>
-    <body>
-<header>
-<nav><br><br>
-<ul>
-    <li><a href="index.html"><i class="fa fa-circle-o" title="Inicio"></i></a></li>
-    <li><a href="portafolio.html"><b title="Portafolio"></b></a></li>
-    <li><a href="contacto.html"><b title="Contacto"></b></a></li>
-</ul>    
-</nav>
-<figure><a href="index.html"><br><img src="img/logo.svg"></a></figure>        
-</header>
-        
-        <div class="parallax-window" data-parallax="scroll" data-image-src="img/ai-01.png">
-        
-        </div>
-         
-        <main>
-        <div class="info" align="center">
-            <br><br>
-            <h1>Arte Iraca Usiacurí</h1><br>
-            Proyecto de <a href="portafolio.html/#identidad">identidad corporativa</a> realizado en el 2014 para la artesana Doris Torregrosa en clase de identidad corporativa en la Universidad Autónoma del Caribe, Barranquilla, Colombia.<br>
-            Mi marca fue la escogida.
-        </p>
-        </div>
-        <div id="captioned-gallery">
-	<figure class="slider">
-		<figure>
-            <div id="uno"></div>
-			<figcaption><a id="izq" href="#uno"><i class="fa fa-arrow-circle-o-left"></i></a> <a id="der" href="#dos"><i class="fa fa-arrow-circle-o-right"></i></a></figcaption>
-		</figure>
-		<figure>
-			<div id="dos"></div>
-			<figcaption><a id="izq" href="#uno"><i class="fa fa-arrow-circle-o-left"></i></a> <a id="der" href="#dos"><i class="fa fa-arrow-circle-o-right"></i></a></figcaption>
-		</figure>
-	</figure>
-</div>
-        
-       <!-- <div class="parallax-window" data-parallax="scroll" data-image-src="img/pink-01.png">
-        <div align="center">
-        <br><br><br><br>
-        <h1>Contáctame</h1><br><br>
-            Nicolle Bustos<br>
-            Barranquilla, Colombia<br><br>
-            3006609683<br>
-            nicolle.org@gmail.com
-        </div>
-        </div>-->
-       <div class="pie">
-        <div align="center">
-        <br><br><br><br><br>
-        <h1>Contáctame</h1><br><br>
-            Nicolle Bustos<br>
-            Barranquilla, Colombia<br><br>
-            3006609683<br>
-            nicolle.org@gmail.com
-        </div>
-        </div>
-        </main>
-        </body>
+body {
+    margin: auto;
+    overflow-x: hidden;
+    font-family: 'Domine', serif;
+    background: #fff;
+}
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="parallax.js-1.3.1/parallax.js"></script>
-<script src="parallax.js-1.3.1/parallax.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+header {
+    z-index: 99999;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+}
+
+figure {
+    position: fixed;
+    margin-top: 14px;
+    font-size: 9pt;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 0px;
+    transition: 0.5s;
+}
+
+nav {
+    font-family: Montserrat, sans-serif;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    text-align: right;
+    transition: 0.5s;
+}
+
+ul {
+    margin-right: 20px;
+    display: inline;
+    position: relative;
+}
+
+ul li {
+    display: inline;
+    padding: 20px;
+}
+
+li b {
+    font-family: FontAwesome;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#drag {
+    cursor: pointer;
+}
+
+.fs {
+    width: 1500px;
+    margin-top: 200px;
+    margin-left: -50%;
+}
+
+.info {
+    color: #444;
+    margin: 0% 20%;
+    text-align: center;
+    width: 60%;
+    min-height: 85%;
+    font-size: 18pt;
+    -webkit-user-select: none; /* Chrome/Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */
+
+/* Rules below not implemented in browsers yet */
+-o-user-select: none;
+user-select: none;
+    cursor: default;
+}
+
+.info h1 {
+    font-family: Montserrat, sans-serif;
+    color: #666;
+}
+
+.info a {
+    color: #F48FB1;
+}
+
+.info img {
+    padding: 1%;
+}
+
+#ps {
+    border-bottom: 5px solid #FF4081;
+    width: 70%;
+    font-size: 10pt;
+}
+
+#ai {
+    border-bottom: 5px solid #1DE9B6;
+    width: 80%;
+    font-size: 10pt;
+}
+
+#ind {
+    border-bottom: 5px solid #7C4DFF;
+    width: 60%;
+    font-size: 10pt;
+}
+
+.pie {
+    background: #ffcdd2;
+    color: #555;
+    height: 100%;
+    width: 102%;
+    font-family: 'Domine', serif;
+    font-size: 13pt;
+    bottom: 0;
+    margin-left: -1%;
+    position: ;
+}
+
+.pie h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 36pt;
+}
+
+.banner {
+    width: 200%;
+    height: 720px;
+    margin-left: -50%;
+    background-image: url(../img/ai-01.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parallax-window {
+    height: 70%;
+    background: transparent;
+}
     
-</html>
+    .parallax-window img {
+    height: 100%;
+}
+
+div#captioned-gallery {
+    padding-bottom: 100px;
+	width: 50%;
+	overflow: hidden;
+    margin: 0 auto;
+}
+#captioned-gallery figure { margin: 0; }
+#captioned-gallery figure.slider {
+	position: relative;
+	width: 500%;
+	font-size: 0;
+	animation: 40s slidy infinite; 
+}
+#captioned-gallery figure.slider figure { 
+	width: 20%;
+	display: inline-block;
+	position: inherit; 
+}
+
+#uno {
+    background-image: url(../img/ai-02.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+}
+
+#dos {
+    background-image: url(../img/ai-03.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+}
+
+#captioned-gallery figure.slider img {
+	width: 100%;
+}
+#captioned-gallery figure.slider figure figcaption {
+	position: absolute;
+	bottom: 0;
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+	color: #fff;
+	width: 100%;
+	font-size: 1.3rem;
+	padding: .6rem;
+    font-family: 'FontAwesome', sans-serif;
+    opacity: 0;
+    transition: 1s;
+}
+
+#captioned-gallery:hover figure.slider figure figcaption {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#izq {
+    float: left;
+    margin-left: 20px;
+}
+
+#der {
+    float: right;
+    margin-right: 40px;
+}
+
+}
 
 
 
+/*MOBILE*/
 
 
 
+@media screen and (max-width: 480px) {
+    html, body{
+  height:100%;
+}
 
+body {
+    margin: auto;
+    overflow-x: hidden;
+    font-family: 'Domine', serif;
+    background: #fff;
+}
+
+header {
+    z-index: 99999;
+    height: 100px;
+    position: fixed;
+}
+
+figure {
+    position: fixed;
+    margin-top: 7px;
+    margin-left: 15px;
+    font-size: 9pt;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 0px;
+    transition: 0.5s;
+}
+
+nav {
+    font-family: Montserrat, sans-serif;
+    width: 100%;
+    height: 100px;
+    margin-top: -14px;
+    position: fixed;
+    text-align: right;
+    transition: 0.5s;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), transparent);
+}
+
+ul {
+    margin-right: 5px;
+    display: inline;
+    position: relative;
+}
+
+ul li {
+    display: inline;
+    padding: 10px;
+}
+
+li b {
+    font-family: FontAwesome;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    max-width: 480px;
+    min-width: 320px;
+    height: 100%;
+}
+
+#drag {
+    cursor: pointer;
+}
+
+.fs {
+    width: 1500px;
+    margin-top: 200px;
+    margin-left: -50%;
+}
+
+.info {
+    color: #444;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    min-height: 85%;
+    font-size: 16pt;
+    -webkit-user-select: none; /* Chrome/Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */
+
+/* Rules below not implemented in browsers yet */
+-o-user-select: none;
+user-select: none;
+    cursor: default;
+}
+
+.info h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 24pt;
+    color: #666;
+}
+
+.info a {
+    color: #F48FB1;
+}
+
+.info img {
+    padding: 1%;
+}
+
+#ps {
+    border-bottom: 5px solid #FF4081;
+    width: 70%;
+    font-size: 10pt;
+}
+
+#ai {
+    border-bottom: 5px solid #1DE9B6;
+    width: 80%;
+    font-size: 10pt;
+}
+
+#ind {
+    border-bottom: 5px solid #7C4DFF;
+    width: 60%;
+    font-size: 10pt;
+}
+
+.pie {
+    background: #ffcdd2;
+    color: #555;
+    height: 100%;
+    width: 100%;
+    font-family: 'Domine', serif;
+    font-size: 13pt;
+    bottom: 0;
+}
+
+.pie h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 24pt;
+}
+
+.banner {
+    width: 200%;
+    height: 720px;
+    margin-left: -50%;
+    background-image: url(../img/arteiraca.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parallax-window {
+        max-width: 480px;
+    min-width: 320px;
+    height: 70%;
+    background: transparent;
+}
+
+div#captioned-gallery {
+	width: 100%;
+	overflow: hidden;
+    margin: 0 auto;
+}
+#captioned-gallery figure { margin: 0; }
+#captioned-gallery figure.slider {
+	position: relative;
+	width: 500%;
+	font-size: 0;
+	animation: 40s slidy infinite; 
+}
+#captioned-gallery figure.slider figure { 
+	width: 20%;
+	display: inline-block;
+	position: inherit; 
+}
+
+#uno {
+    background-image: url(../img/arteiraca2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+}
+
+#dos {
+    background-image: url(../img/arteiraca3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+}
+
+#captioned-gallery figure.slider img {
+	width: 100%;
+}
+#captioned-gallery figure.slider figure figcaption {
+	position: absolute;
+	bottom: 0;
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+	color: #fff;
+	width: 100%;
+	font-size: 1.3rem;
+	padding: .6rem;
+    font-family: 'FontAwesome', sans-serif;
+    opacity: 1;
+}
+
+#izq {
+    float: left;
+    margin-left: 20px;
+}
+
+#der {
+    float: right;
+    margin-right: 40px;
+}
+}
